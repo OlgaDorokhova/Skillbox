@@ -1,6 +1,8 @@
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.HibernateUtil;
+import org.hibernate.SessionFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,6 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceTest {
+
     private final UserService userService = new UserServiceImpl();
 
     private final String testName = "Ivan";
